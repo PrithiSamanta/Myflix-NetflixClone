@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.bg {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8d617e19-3c3c-4c28-8998-c9b14dbc7200/web/IN-en-20250901-TRIFECTA-perspective_48d84d4e-9558-46b8-a0f3-8b2dc8478431_large.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+button {
+    cursor: pointer;
+}
+
+.box {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    z-index: -1;
+    pointer-events: all;
+}
+
+body {
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav ul li img {
+    width: 148px;
+}
+
+
+li {
+    list-style: none;
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 22px 0;
+    gap: 40vw;
+}
+
+nav ul :nth-child(1) img {
+    margin-left: 15px;
+}
+
+#top {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 17px;
+    padding: 0;
+}
+
+nav ul :nth-child(2) {
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li:nth-child(1) svg {
+    padding: 0;
+}
+
+nav ul :nth-child(2) button {
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+nav ul :nth-child(2) button:hover {
+    background-color: rgb(195, 0, 0);
+}
+
+.lang-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+select {
+    padding: 0px;
+    border-radius: 4px;
+}
+
+main .flex {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    gap: 0.9rem;
+}
+
+main div .bolder {
+    font-size: 3.3rem;
+    margin-top: 9rem;
+    width: 50vw;
+    align-self: center;
+    font-weight: 1000;
+}
+
+main div .bold {
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    font-weight: 700;
+}
+
+main div .normal {
+    font-size: 17px;
+}
+
+main .flex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div input {
+    margin: 2vh 7px;
+    height: 3.5rem;
+    width: 28rem;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid rgb(97, 94, 94);
+    padding-left: 1vw;
+    font-size: 17px;
+    color: white;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    color: #b0b0b0;
+    left: 23px;
+    top: 32px;
+    pointer-events: none;
+    transition: ease 0.3s;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: 20px;
+    left: 22px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+main .flex2 button {
+    height: 3.5rem;
+    width: 12rem !important;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid red;
+    background-color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+main .flex2 button:hover {
+    background-color: rgb(175, 0, 0);
+}
+
+main .design img {
+    width: 100%;
+    position: absolute;
+    bottom: -2vw;
+}
+
+section .flex3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vh 10vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.flex3::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+.flex3 button {
+    flex: 0 0 auto;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.flex3 button img {
+    height: 15rem;
+    width: 11rem;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+}
+
+section .trend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    margin: 55px auto auto auto;
+    max-width: 80vw;
+    color: white;
+}
+
+section div button {
+    border-radius: 3px;
+    background-color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5px 22px 5px 18px;
+    border: none;
+    position: relative;
+    transition: all ease 0.2s;
+}
+
+section div button span {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+    color: rgb(0, 0, 0);
+    padding: 2px 6px;
+    font-size: 95px;
+    font-weight: 800;
+    -webkit-text-stroke: 2px rgb(223, 223, 223);
+}
+
+section div button:hover {
+    transform: scale(1.05);
+}
+
+section div button img {
+    height: 34vh;
+    width: 23vh;
+    overflow: scroll;
+    border-radius: 10px;
+}
+
+
+div .reason {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    color: white;
+    margin: 2vh auto;
+    max-width: 80vw;
+    background-color: black;
+    font-weight: 600;
+}
+
+
+div .flex4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    margin: 0 9.5vw;
+}
+
+.flex4 div {
+    background-image: linear-gradient(to bottom right, #192145, #210e17);
+    height: 280px;
+    color: white;
+    border-radius: 15px;
+    padding: 30px 16px;
+    position: relative;
+}
+
+.flex4 .big {
+    display: flex;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.flex4 div svg {
+    position: absolute;
+    top: 65%;
+    right: 4%;
+}
+
+.section {
+    background-color: black;
+    color: white;
+}
+
+.faq {
+    max-width: 80vw;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    margin-top: 80px;
+}
+
+.section .que {
+    width: 80vw;
+    background-color: #2d2d2d;
+    font-size: 23px;
+    margin: 8px auto 0 auto;
+    padding: 21px;
+    padding-top: 27px;
+    gap: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.section .que:hover {
+    background-color: #424242;
+}
+
+.flex5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex5 svg {
+    width: 35px;
+    height: 35px;
+
+}
+
+footer {
+    display: grid;
+    color: rgb(192, 188, 188);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: auto;
+    padding: 10px;
+}
+
+.question {
+    grid-column: 1/5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.question span {
+    text-decoration: underline;
+}
+
+.un {
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.end {
+    color: white;
+    text-align: center;
+    margin: 0 10vw;
+}
+
+.end p {
+    margin: 5rem 0 2rem 0;
+    font-size: 16px;
+}
+
+.end div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.end div input {
+    width: 50%;
+    height: 55px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: black;
+    border: 1px solid rgb(125, 120, 120);
+    color: white;
+}
+
+.mobile label {
+    left: 14.5rem;
+    top: 1.5rem;
+}
+
+.mobile input:focus+label,
+.mobile input:not(:placeholder-shown)+label {
+    left: 14.5rem;
+    top: 0.8rem;
+}
+
+.end div button {
+    height: 3.5rem;
+    width: 10rem !important;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 17px;
+    margin-top: 12px;
+    margin: 5px;
+}
+
+.end div button:hover {
+    background-color: rgb(219, 17, 17);
+}
+
+.mobile {
+    width: 50px;
+}
+
+.grey {
+    color: rgb(182, 180, 180);
+    font-size: 16px;
+}
+
+#bottom {
+    margin-left: 10vw;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 17px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 3;
+}
+
+li div {
+    color: white;
+    background-color: black;
+    padding: 5px 12px;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 4px;
+}
+
+
+
+.white {
+    color: rgb(181, 180, 180);
+    margin-left: 10vw;
+    margin-top: 35px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.last {
+    color: rgb(128, 122, 122);
+    padding-bottom: 200px;
+    margin: 0 10vw;
+    font-size: 13px;
+}
+
+li div svg {
+    color: white;
+}
+
+a {
+    color: #2d8dd2;
+}
+
+
+::placeholder {
+    color: rgb(196, 192, 192);
+}
+
+@media (max-width: 1400px) {
+    main div .bolder {
+        font-size: 48px;
+    }
+
+    main div .bold {
+        font-size: 18px;
+    }
+
+    main div .normal {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1300px) {
+    div .flex4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main div .bolder {
+        font-size: 40px;
+    }
+
+    .end button {
+        font-size: 16px;
+
+    }
+
+    main div button {
+        font-size: 16px;
+    }
+
+    .end div button {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width : 1200px) {
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .question {
+        grid-column: 1/4;
+    }
+
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    .bg {
+        height: 40vh;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    .box {
+        height: 40vh;
+    }
+}
+
+@media (max-width : 990px) {
+    div .flex4 {
+        grid-template-columns: 1fr;
+    }
+
+
+    main div .bolder {
+        font-size: 32px;
+    }
+
+    nav ul li img {
+        width: 98px;
+
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .question {
+        grid-column: 1/3;
+    }
+
+    main .flex2 {
+        flex-direction: column;
+    }
+
+    main div input {
+        width: 80%;
+
+    }
+
+    main div button {
+        width: 20vh;
+    }
+
+    .end div {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .end div button {
+        width: 20vh;
+
+    }
+
+    .end div input {
+        width: 80%;
+    }
+
+    #top {
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 10px;
+
+    }
+}
+
+@media screen and (max-width : 607px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    main div .bolder {
+        margin-top: 90px;
+    }
+
+    nav ul {
+        gap: 15vw;
+    }
+
+    main div .bolder {
+        width: 90vw;
+    }
+
+    .flex5 .que span {
+        font-size: 18px;
+    }
+
+    .flex5 .que svg {
+        height: 22px;
+    }
+
+    section .trend {
+        max-width: 90vw;
+    }
+
+    section .flex3 {
+        margin: 1vh 7vw;
+    }
+
+    div .reason {
+        max-width: 85vw;
+    }
+
+    .faq {
+        max-width: 85vw;
+    }
+
+    .section .que {
+        width: 85vw;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+
+    div .flex4 {
+        margin: 7.5vw;
+    }
+
+    .end {
+        margin: 7.5vw;
+    }
+
+    .last {
+        margin: 7.5vw;
+    }
+
+    #bottom {
+        margin: 7.5vw;
+    }
+
+    .white {
+        margin: 7.5vw;
+    }
+
+    .flex4 div {
+        max-height: 220px;
+    }
+
+    .flex3 button img {
+        height: 12rem;
+        width: 8rem;
+    }
+
+    section div button {
+        margin: 5px 15px 5px 8px;
+    }
+
+    section div button span {
+        bottom: 5px;
+        left: -15px;
+        font-size: 65px;
+        ;
+        -webkit-text-stroke: 1.5px rgb(223, 223, 223);
+    }
+
+    .bg {
+        height: 80vh;
+    }
+
+    .box {
+        height: 80vh;
+    }
+
+    .input-group {
+        margin-left: 45px;
+        width: 80vw;
+    }
+
+    .input-group input {
+        padding-left: 14px;
+    }
+
+    .mobile {
+        margin-left: 0;
+    }
+
+    .mobile label {
+        position: absolute;
+        color: white;
+        left: 43px;
+        top: 20px;
+        pointer-events: none;
+        transition: ease 0.3s;
+    }
+
+    .mobile input:focus+label,
+    .mobile input:not(:placeholder-shown)+label {
+        top: 6px;
+        left: 41px;
+        font-size: 12px;
+        color: #b0b0b0;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    nav ul {
+        gap: 4vw;
+    }
+}
+
+@media (max-width:320px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        padding: 10px 0;
+    }
+
+    nav ul :nth-child(2) {
+        margin-left: 15px;
+    }
+
+    main div .bolder {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width:242px) {
+    nav ul :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div .bold {
+        font-size: 17px
+    }
+
+    main div .bolder {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:192px) {
+    main div .bolder {
+        font-size: 20px;
+    }
+
+    main div .bold {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    main div .bolder {
+        margin-top: 6rem;
+    }
+
+    .input-group {
+        margin-left: 20vw;
+        width: 80vw;
+    }
+
+    .input-group label {
+        top: 23px;
+    }
+
+    .input-group input:focus+label,
+    .input-group input:not(:placeholder-shown)+label {
+        top: 10px;
+        left: 15px;
+
+    }
+
+    .mobile {
+        margin-left: 0;
+    }
+
+    .mobile label {
+        position: absolute;
+        color: white;
+        left: 83px;
+        top: 20px;
+        pointer-events: none;
+        transition: ease 0.3s;
+    }
+
+    .mobile input:focus+label,
+    .mobile input:not(:placeholder-shown)+label {
+        top: 5px;
+        left: 77px;
+        font-size: 12px;
+        color: #b0b0b0;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .bg {
+        height: 180vh;
+    }
+
+    .box {
+        height: 180vh;
+    }
+
+    section .trend {
+        max-width: 93vw;
+    }
+
+    section .flex3 {
+        margin: 1vh 5vw;
+    }
+
+    div .reason {
+        max-width: 90vw;
+    }
+
+    .faq {
+        max-width: 90vw;
+    }
+
+    .section .que {
+        width: 90vw;
+    }
+
+    footer {
+        max-width: 93vw;
+    }
+
+    div .flex4 {
+        margin: 5vw;
+    }
+
+    .end {
+        margin: 5vw;
+    }
+
+    .last {
+        margin: 5vw;
+    }
+
+    #bottom {
+        margin: 5vw;
+    }
+
+    .white {
+        margin: 5vw;
+    }
+}
