@@ -857,11 +857,11 @@ a {
     }
 
     .bg {
-        height: 180vh;
+        height: 150vh;
     }
 
     .box {
-        height: 180vh;
+        height: 150vh;
     }
 
     section .trend {
@@ -907,4 +907,5 @@ a {
     .white {
         margin: 5vw;
     }
+
 }
