@@ -179,7 +179,6 @@ main .flex2 button {
     width: 12rem !important;
     border-radius: 5px;
     color: white;
-    border: 1px solid red;
     background-color: red;
     font-size: 1.2rem;
     font-weight: 600;
@@ -909,3 +908,4 @@ a {
     }
 
 }
+
